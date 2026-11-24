@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Background Squircle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Amber Gold Wave Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Sapphire Blue Bubble Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#f59e0b" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" stroke="#334155" stroke-width="4" />
+
+  <!-- Inner Ambient Glow Ring -->
+  <rect x="12" y="12" width="488" height="488" rx="118" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.3" />
+
+  <!-- Group with Glow -->
+  <g filter="url(#glow)">
+    <!-- Speech Bubble Body -->
+    <path d="M296 144 C375.529 144 440 204.471 440 280 C440 323.235 418.176 361.647 384 386.471 L396 432 L342.353 410.824 C327.529 414.118 312 416 296 416 C216.471 416 152 355.529 152 280 C152 204.471 216.471 144 296 144 Z"
+          fill="url(#blueGrad)"
+          stroke="url(#goldGrad)"
+          stroke-width="8" />
+
+    <!-- Soundwave Lines transitioning into Bubble -->
+    <path d="M72 280 C96 280 104 220 120 220 C136 220 144 340 160 340 C176 340 184 180 200 180 C216 180 224 380 240 380 C248 380 252 330 260 300"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="14"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Open Book Icon Inside Bubble (Representing Learning & IELTS) -->
+    <!-- Left Page -->
+    <path d="M296 230 C272 220 240 222 220 234 L220 334 C240 322 272 320 296 330 Z"
+          fill="url(#goldGrad)"
+          opacity="0.95" />
+    <!-- Right Page -->
+    <path d="M296 230 C320 220 352 222 372 234 L372 334 C352 322 320 320 296 330 Z"
+          fill="url(#goldGrad)"
+          opacity="0.95" />
+
+    <!-- Book Spine Divider -->
+    <line x1="296" y1="228" x2="296" y2="336" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Subtle Page Lines -->
+    <line x1="236" y1="256" x2="280" y2="250" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <line x1="236" y1="276" x2="280" y2="270" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <line x1="236" y1="296" x2="280" y2="290" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+
+    <line x1="312" y1="250" x2="356" y2="256" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <line x1="312" y1="270" x2="356" y2="276" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <line x1="312" y1="290" x2="356" y2="296" stroke="#78350f" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  </g>
+</svg>
